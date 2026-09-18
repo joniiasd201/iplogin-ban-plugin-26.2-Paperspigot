@@ -1,0 +1,44 @@
+# ============================================================
+# IPLoginBan – Konfiguration
+# ============================================================
+
+prefix: "&8[&cIPLogin&8] &7"
+
+# Nachrichten – Join / Login
+msg-ip-nicht-registriert: "&cDeine IP-Adresse ist für diesen Account nicht registriert.\n&7Bitte kontaktiere einen Administrator."
+msg-ip-gebummt: "&cDu bist von diesem Server gebannt.\n&7Grund: &f{grund}\n&7Dauer: &f{dauer}\n&7Gebannt von: &f{admin}"
+msg-spieler-gebannt: "&cDu bist von diesem Server gebannt.\n&7Grund: &f{grund}\n&7Dauer: &f{dauer}\n&7Gebannt von: &f{admin}"
+
+# Nachrichten – Bans
+msg-spieler-gebannt-broadcast: "&c{spieler} &7wurde von &f{admin} &7gebannt. Grund: &f{grund} &7| Dauer: &f{dauer}"
+msg-spieler-entbannt-broadcast: "&a{spieler} &7wurde von &f{admin} &7entbannt."
+msg-ip-gebannt: "&7Die IP &f{ip} &7wurde gebannt. Grund: &f{grund} &7| Dauer: &f{dauer}"
+msg-ip-entbannt: "&7Die IP &f{ip} &7wurde entbannt."
+
+# Nachrichten – Befehle
+msg-keine-berechtigung: "&cDu hast keine Berechtigung für diesen Befehl."
+msg-spieler-nicht-gefunden: "&cSpieler nicht gefunden."
+msg-ungueltige-dauer: "&cUngültige Dauer. Beispiele: 30m, 2h, 1d, 1d12h, permanent"
+msg-ungueltige-ip: "&cUngültige IP-Adresse."
+msg-ban-nicht-gefunden: "&cKein aktiver Ban gefunden."
+msg-reload-erfolgreich: "&aKonfiguration und Daten neu geladen."
+msg-spieler-ip-liste: "&7IP-Adressen von &f{spieler}&7:"
+msg-keine-ips: "&7Keine IP-Adressen registriert."
+msg-ip-hinzugefuegt: "&aIP &f{ip} &awurde zu &f{spieler} &ahinzugefügt."
+msg-ip-bereits-vorhanden: "&cDiese IP ist bereits registriert."
+msg-ip-entfernt: "&aIP &f{ip} &awurde von &f{spieler} &aentfernt."
+msg-ip-nicht-vorhanden: "&cDiese IP ist nicht registriert."
+msg-alle-ips-entfernt: "&aAlle IP-Adressen von &f{spieler} &awurden entfernt."
+
+# Ban-Dauer Formatierung
+dauer-permanent: "Permanent"
+
+# Broadcasts
+broadcast-bei-ban: true
+broadcast-bei-unban: true
+
+# Automatische IP-Registrierung beim ersten Join
+automatische-ip-registrierung: true
+
+# Maximale Anzahl erlaubter IPs pro Spieler (0 = unbegrenzt)
+max-ips-pro-spieler: 5
