@@ -1,0 +1,68 @@
+name: IPLoginBan
+version: '1.0.0'
+main: de.server.iplogin.IPLoginPlugin
+api-version: '26.2'
+description: Automatisches IP-Login-System und Ban-System
+author: ServerTeam
+
+commands:
+  iplogin:
+    description: Verwaltet IP-Adressen von Spielern
+    usage: /iplogin <spieler> | add | remove | clear | reload
+    permission: iplogin.admin
+  ban:
+    description: Bannt einen Spieler und seine IP
+    usage: /ban <spieler> <dauer> <grund>
+    permission: iplogin.ban
+  unban:
+    description: Entbannt einen Spieler
+    usage: /unban <spieler>
+    permission: iplogin.unban
+  banip:
+    description: Bannt eine IP-Adresse
+    usage: /banip <ip> <dauer> <grund>
+    permission: iplogin.ipban
+  unbanip:
+    description: Entbannt eine IP-Adresse
+    usage: /unbanip <ip>
+    permission: iplogin.ipban
+  baninfo:
+    description: Zeigt Ban-Informationen
+    usage: /baninfo <spieler>
+    permission: iplogin.baninfo
+  banlist:
+    description: Zeigt alle aktiven Bans
+    usage: /banlist
+    permission: iplogin.banlist
+  tempban:
+    description: Temporärer Ban
+    usage: /tempban <spieler> <dauer> <grund>
+    permission: iplogin.ban
+  ipban:
+    description: Bannt Spieler und IP
+    usage: /ipban <spieler> <dauer> <grund>
+    permission: iplogin.ipban
+  ipunban:
+    description: Entbannt eine IP
+    usage: /ipunban <ip>
+    permission: iplogin.ipban
+
+permissions:
+  iplogin.admin:
+    description: Zugriff auf IP-Verwaltung
+    default: op
+  iplogin.ban:
+    description: Spieler bannen
+    default: op
+  iplogin.unban:
+    description: Spieler entbannen
+    default: op
+  iplogin.baninfo:
+    description: Ban-Infos einsehen
+    default: op
+  iplogin.banlist:
+    description: Ban-Liste einsehen
+    default: op
+  iplogin.ipban:
+    description: IP-Bans verwalten
+    default: op
