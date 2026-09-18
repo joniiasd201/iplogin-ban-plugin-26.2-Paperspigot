@@ -140,9 +140,6 @@ public class BanManager {
         if (ip != null) spielerBan.ips.add(ip);
         spielerBans.put(uuid.toString(), spielerBan);
 
-        if (ip != null) {
-            banneIp(ip, name, dauerMillis, grund, admin);
-        }
         speichereBans();
     }
 
